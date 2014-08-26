@@ -12,6 +12,18 @@ package org.opengsi.math.interfaces;
  *
  * @author Young-Mook Kang <youngmook@opengsi.org>
  */
-public interface IGsiVector {
+public interface IGsiVector extends Iterable<Double>, Comparable<IGsiVector> {
+    
+    public void add(final IGsiVector theVector);
+    
+    public IGsiVector plus(final IGsiVector theVector);
+    
+    public void subtract(final IGsiVector theVector);
+    
+    public IGsiVector minus(final IGsiVector theVector);
+        
+    public double dot(final IGsiVector theVector);
+    
+    public IGsiVector cross(final IGsiVector theVector);           
     
 }
