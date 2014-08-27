@@ -3,9 +3,19 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.opengsi</groupId>
     <artifactId>opengsi</artifactId>
-    <version>0.1</version>
+    <version>0.0.1</version>
     <packaging>jar</packaging>
     <repositories>
+        <repository>
+            <id>opengsi central repo1</id>
+            <url>http://repo1.opengsi.org/content/groups/public</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
         <repository>
             <id>opengsi central repo</id>
             <url>http://repo.opengsi.org/content/groups/public</url>
@@ -15,9 +25,19 @@
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
-        </repository>
+        </repository>        
     </repositories>
     <pluginRepositories>
+        <pluginRepository>
+            <id>opengsi central repo1</id>
+            <url>http://repo1.opengsi.org/content/groups/public</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
         <pluginRepository>
             <id>opengsi central repo</id>
             <url>http://repo.opengsi.org/content/groups/public</url>
@@ -27,7 +47,7 @@
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
-        </pluginRepository>
+        </pluginRepository>        
     </pluginRepositories>    
     <dependencies>
         <dependency>
