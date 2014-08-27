@@ -121,7 +121,7 @@ public class GsiVector implements IGsiVector, Cloneable, Serializable {
     }
 
     @Override
-    public final double dotProduct(IGsiVector theVector) {
+    public final double dotProduct(IGsiVector theVector) throws MismatchedSizeException  {
         return this.dot(theVector);
     }
 
@@ -182,7 +182,7 @@ public class GsiVector implements IGsiVector, Cloneable, Serializable {
     }
 
     @Override
-    public void resize(int theLength) {
+    public void resize(int theLength)  throws MismatchedSizeException {
         if (theLength < MIN_LENGTH) {
             throw new MismatchedSizeException("Input length is low");
         } else {

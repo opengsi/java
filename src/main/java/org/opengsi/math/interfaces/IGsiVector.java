@@ -10,6 +10,7 @@ package org.opengsi.math.interfaces;
 
 import java.util.Collection;
 import java.util.List;
+import org.opengsi.comsci.exceptions.MismatchedSizeException;
 import org.opengsi.interfaces.IGsiList;
 
 /**
@@ -26,8 +27,8 @@ public interface IGsiVector extends Iterable<Double>, Comparable<IGsiVector> {
     
     public IGsiVector minus(final IGsiVector theVector);
         
-    public double dot(final IGsiVector theVector);
-    public double dotProduct(final IGsiVector theVector);
+    public double dot(final IGsiVector theVector)  throws MismatchedSizeException ;
+    public double dotProduct(final IGsiVector theVector)  throws MismatchedSizeException ;
  
     public double get(final int theIndex);
     public double getValue(final int theIndex);
@@ -42,7 +43,7 @@ public interface IGsiVector extends Iterable<Double>, Comparable<IGsiVector> {
     public void remove(final int theIndex);
     public void remove(final int theBegin, final int theLength);
     
-    public void resize(final int theSize);
+    public void resize(final int theSize)  throws MismatchedSizeException;
     
     public void set(final IGsiVector theVector);
     public void set(final Double[] theDoubleArray);
