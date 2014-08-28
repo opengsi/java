@@ -25,7 +25,21 @@
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
-        </repository>        
+        </repository>      
+        <repository>
+            <id>ebi-repo</id>
+            <url>http://www.ebi.ac.uk/intact/maven/nexus/content/repositories/ebi-repo/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>ebi-repo-snapshots</id>
+            <url>http://www.ebi.ac.uk/intact/maven/nexus/content/repositories/ebi-repo-snapshots/</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+        </repository>
     </repositories>
     <pluginRepositories>
         <pluginRepository>
@@ -40,20 +54,20 @@
         </pluginRepository>
         <pluginRepository>
             <id>opengsi central repo</id>
-            <url>http://repo.opengsi.org/content/groups/public</url>
+            <url>http://repo1.opengsi.org/content/groups/public</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
-        </pluginRepository>        
+        </pluginRepository>               
     </pluginRepositories>    
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>[3.8,4.10]</version>
+            <version>4.11</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
