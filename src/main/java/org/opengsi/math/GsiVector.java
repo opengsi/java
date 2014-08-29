@@ -249,7 +249,7 @@ public class GsiVector implements IGsiVector, Cloneable, Serializable {
 
     @Override
     public Double[] toArray() {
-        Double[] theDoubleArray = null;
+        Double[] theDoubleArray = new Double[this.size()];
         return this.itsElements.toArray(theDoubleArray);
     }
 

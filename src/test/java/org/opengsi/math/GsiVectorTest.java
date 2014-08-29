@@ -329,8 +329,7 @@ public class GsiVectorTest {
     @Test
     public void testToArray() {
         System.out.println("toArray");
-        Double[] dv = null;
-        dv = v1.toArray();
+        Double[] dv = v1.toArray();
         for (int i = 0, l = v1.size(); i < l; i++) {
             assertEquals(v1.get(i), dv[i], 0.0);
         }
